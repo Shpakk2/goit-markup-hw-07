@@ -471,7 +471,7 @@ border-radius: 0px 0px 4px 4px; */
 .logo--white {
   color: var(--background-color);
 }
-.fisical-address {
+.contacts__address {
   color: var(--background-color);
   font-style: normal;
   text-decoration: none;
@@ -482,8 +482,8 @@ border-radius: 0px 0px 4px 4px; */
   margin-top: 20px;
 }
 
-.fisical-address:hover,
-.fisical-address:focus {
+.contacts__address:hover,
+.contacts__address:focus {
   color: var(--link-color);
 }
 
