@@ -69,13 +69,13 @@ ul {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .link:hover,
 .link:focus {
   color: var(--link-color);
-  fill: #2196f3;
+  fill: var(--link-color);
 }
 /* header */
 
@@ -116,7 +116,6 @@ ul {
   margin-right: 50px;
 }
 .site-nav__link {
-  font-size: 14px;
   line-height: 1.14;
 }
 
@@ -131,19 +130,19 @@ ul {
 .auth-nav__item .auth-nav__link:hover .auth-nav__icon,
 .auth-nav__item .auth-nav__link:focus .auth-nav__icon {
   color: var(--link-color);
-  fill: #2196f3;
+  fill: var(--link-color);
 }
 
 .current {
   color: var(--link-color);
-  fill: #2196f3;
+  fill: var(--link-color);
   position: relative;
 }
 
 .current::after {
   content: '';
   position: absolute;
-  border-bottom: 4px solid #2196f3;
+  border-bottom: 4px solid var(--link-color);
   border-radius: 2px;
   width: 100%;
   bottom: -34px;
@@ -159,7 +158,7 @@ ul {
   margin-left: 50px;
 } */
 .auth-nav__link {
- 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
 }
 .auth-nav__item {
@@ -168,7 +167,7 @@ ul {
 
 .auth-nav__icon {
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--main-color);
   width: 100%;
   height: 100%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -286,7 +285,6 @@ ul {
   color: var(--text-color);
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
 }
@@ -310,7 +308,6 @@ ul {
   padding: 27px 0;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
@@ -366,7 +363,7 @@ ul {
 
 .team .social__link:hover .social__icon,
 .team .social__link:focus .social__icon {
-  fill: #fff;
+  fill: var(--background-color);
 }
 
 .social__link:hover,
@@ -388,9 +385,7 @@ border-radius: 0px 0px 4px 4px; */
 .foot__title,
 .subscribe__title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   font-style: normal;
   color: var(--background-color);
@@ -495,6 +490,7 @@ border-radius: 0px 0px 4px 4px; */
 .contacts__link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-weight: 400;
@@ -711,7 +707,7 @@ border-radius: 0px 0px 4px 4px; */
   margin-left: 10px;
   height: 100%;
   width: 100%;
-  fill: #ffffff;
+  fill: var(--background-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -728,7 +724,7 @@ border-radius: 0px 0px 4px 4px; */
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  background: #ffffff;
+  background: var(--background-color);
   border-radius: 4px;
   padding: 12px 42px;
   cursor: pointer;
@@ -784,8 +780,6 @@ border-radius: 0px 0px 4px 4px; */
 .check__text {
   margin-top: -10px;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -806,7 +800,7 @@ border-radius: 0px 0px 4px 4px; */
 .check:checked + .check__text > .check__item {
   background-color: var(--link-color);
   border-color: transparent;
-  fill: #ffffff;
+  fill: var(--background-color);
 }
 
 .check:focus + .check__text > .check__item {
@@ -814,8 +808,6 @@ border-radius: 0px 0px 4px 4px; */
 }
 
 .check__terms {
-  font-size: 14px;
-  line-height: 1.71;
   color: var(--link-color);
   text-decoration: none;
   position: relative;
@@ -824,7 +816,7 @@ border-radius: 0px 0px 4px 4px; */
 .check__terms::after {
   content: '';
   position: absolute;
-  border-bottom: 1px solid #2196f3;
+  border-bottom: 1px solid var(--link-color);
   border-radius: 2px;
   width: 100%;
   bottom: 6px;
