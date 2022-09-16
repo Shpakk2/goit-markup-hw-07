@@ -458,6 +458,10 @@ border-radius: 0px 0px 4px 4px; */
   gap: 93px;
 }
 
+.logo--white {
+  color: var(--background-color);
+}
+
 .contacts__item {
   display: flex;
   flex-direction: column;
@@ -468,9 +472,6 @@ border-radius: 0px 0px 4px 4px; */
   margin-bottom: 0;
 }
 
-.logo--white {
-  color: var(--background-color);
-}
 .contacts__address {
   color: var(--background-color);
   font-style: normal;
