@@ -1,0 +1,24 @@
+/* what we do */
+.images-list {
+    display: flex;
+    gap: 30px;
+
+    &__wrap {
+        position: relative;
+        justify-content: center;
+        z-index: -1;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 27px 0;
+        background-color: rgba(47, 48, 58, 0.8);
+        font-weight: var(--H-weight);
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--background-color);
+    }
+}
